@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(55, 250, 162);">
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        .box {
+            border: 10px solid red;
+            border-color: rgb(247, 92, 92);
+            height: 600px;
+            width: 1220px;
+        }
+        
+        .container {
+            border: 5px;
+            height: 60px;
+            width: 70px;
+            border-radius: 15px;
+        }
+        
+        @-webkit-keyframes colorchange {
+            2% {
+                background-color: red;
+            }
+            2% {
+                background-color: yellow;
+            }
+            2% {
+                background-color: burlywood;
+            }
+            2% {
+                background-color: pink;
+            }
+            2% {
+                background-color: goldenrod;
+            }
+        }
+        
+        @-webkit-keyframes imagechange {
+            10% {
+                background-image: url(2.png);
+            }
+            30% {
+                background-image: url(5.png);
+            }
+            55% {
+                background-image: url(3.png);
+            }
+            75% {
+                background-image: url(4.png);
+            }
+            100% {
+                background-image: url(6.png);
+            }
+        }
+        
+        .box {
+            width: 1200px;
+            height: 1000px;
+            background: -webkit-linear-gradient(to right, #155799, #159957);
+            background: linear-gradient(to right, #155799, #159957);
+            border: 5px;
+            animation-duration: 6s;
+            animation-delay: 1s;
+            animation-name: colorchange;
+            animation-iteration-count: 6s;
+            animation-name: imagechange;
+            animation-duration: 20s;
+            animation-direction: normal;
+            animation-delay: 3s;
+            animation-iteration-count: 20s;
+        }
+    </style>
+    <div class="box">
+        <div class="design">
+            <div class="1">
+                <a href="home.html"><img src="house.jpg" height="25px" width="50px"> Home</a>
+            </div>
+            <div class="2">
+                <a href="about.html"><img src="about.jpg" height="25px" width="50px"> About us</a>
+            </div>
+            <div class="3">
+                <a href="flexbox.html"><img src="servic.png" height="25px" width="50px"> Our Services</a>
+            </div>
+            <div class="4">
+                <a href="flexbox.html"><img src="premi.jpg" height="35px" width="70px">Premium Services</a>
+            </div>
+            <div class="4">
+                <a href="contactus.html"><img src="contact.jpg" height="25px" width="50px"> Contact Us</a>
+            </div>
+        </div>
+
+
+        <pre style="margin-top: 25px; font-size:20px; margin-top:100px">
+            This is the mainpage which is the collection of five pages which is linked to another one. 
+            In this page there are so much elements and so many properties of css and having
+            some Javascript methods.
+            The first page is about Homepage which contains the details my guide and mentor,
+            and also have the details about the languages which is used for making the well developed
+            websites or webpage.
+
+        </pre>
+
+    </div>
+
+
+
+    <footer class="footer">
+        <p>Say hi to me on these social networks:</p>
+        <ul class="social-sites">
+            <li><a class="css-is-deranged" href="">GitHub</a></li>
+            <li><a class="css-is-deranged" href="">Instagram</a></li>
+            <li><a class="css-is-deranged" href="">Linkedin</a></li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
