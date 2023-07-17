@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ourservices.css">
+</head>
+<body>
+    <center>
+        <img src="anshul.jpg" alt="Logo" class="logo" height="80px" width="85px">
+        <h1>Homepage</h1>
+    </center>
+    <div class="home">
+        <pre>
+        <li>
+        In this services page have some codes of javascript with html and css .
+        These code can help you easily to upgrade or to your skills with some extra 
+        creative knowledge.
+        And It also conclude some designs which is designed by canva for implemented in 
+        these webpage.  
+
+    </li>
+    </pre>
+</div>
+  
+
+<style>
+.welcome{
+    size: 500px;
+    border: 10px;
+    height: 700px;
+    width: 1000px;
+}
+    
+</style>
+<div class="welcome">
+
+    <h2>
+        Some Canva design are:- 
+    </h2>
+<center>
+    <a href="home.html"><img src="welcome.png"height="250px" width="650px" style="border-radius:100px; margin-left: 100px; box-shadow:inset 10px;"></a>
+    <p style=" font: size 20px;">This can be used as welcoming page.</p>
+    
+</center>
+</div>
+
+<div class="code">
+
+    <p> This is the Code for BMI Calculation </p>
+
+    <div class="container">  
+        <h1>BMI Calculator</h1>
+        <label>
+            <input id="height-input" type="number" placeholder="Enter Your Height in cm: ">
+        </label>        
+        <label>
+            <input id="weight-input" type="number" placeholder="Enter Your Weight in Kg: ">
+        </label>            
+        <button type="submit" onclick="Calculator()">Calculate BMI</button>
+            
+        <div class="bmi-value">
+            <h2>BMI Value: </h2>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="bmi-result">
+            <h2>BMI Result: </h2>
+            <div id="bmi-status"></div>
+        </div>   
+    </div>
+    
+
+    <script>
+        function Calculator()
+        {
+            var height = document.getElementById("height-input").value;
+            var weight = document.getElementById("weight-input").value;
+        
+            var result = parseInt(weight) /(parseInt(height)/100)**2;
+        
+            if( (result)){
+                document.getElementById("bmi-output").innerHTML = result;
+                if(result < 18.5){
+                    document.getElementById("bmi-status").innerHTML = "Underweight";
+                }
+                else if(result < 25){
+                    document.getElementById("bmi-status").innerHTML = "Fit";
+                }
+                else if(result < 30){
+                    document.getElementById("bmi-status").innerHTML = "Overweight";
+                }
+                else{
+                    document.getElementById("bmi-status").innerHTML = "Fatty";
+                }
+            }
+        }
+
+    </script>
+
+
+</div>
+    
+</body>
+</html>
