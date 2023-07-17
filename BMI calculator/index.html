@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">  
+        <h1>BMI Calculator</h1>
+        <label>
+            <input id="height-input" type="number" placeholder="Enter Your Height in cm: ">
+        </label>        
+        <label>
+            <input id="weight-input" type="number" placeholder="Enter Your Weight in Kg: ">
+        </label>            
+        <button type="submit" onclick="Calculator()">Calculate BMI</button>
+            
+        <div class="bmi-value">
+            <h2>BMI Value: </h2>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="bmi-result">
+            <h2>BMI Result: </h2>
+            <div id="bmi-status"></div>
+        </div>   
+    </div>
+    
+
+    <script>
+        function Calculator()
+        {
+            var height = document.getElementById("height-input").value;
+            var weight = document.getElementById("weight-input").value;
+        
+            var result = parseInt(weight) /(parseInt(height)/100)**2;
+        
+            if( (result)){
+                document.getElementById("bmi-output").innerHTML = result;
+                if(result < 18.5){
+                    document.getElementById("bmi-status").innerHTML = "Underweight";
+                }
+                else if(result < 25){
+                    document.getElementById("bmi-status").innerHTML = "Fit";
+                }
+                else if(result < 30){
+                    document.getElementById("bmi-status").innerHTML = "Overweight";
+                }
+                else{
+                    document.getElementById("bmi-status").innerHTML = "Fatty";
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
